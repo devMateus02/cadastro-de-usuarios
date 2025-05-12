@@ -71,6 +71,11 @@ if (!isValidEmail(email)) {
     
 
       async function deleteUser(id) {
+
+         if (!id) {
+    console.error("ID inválido para exclusão.");
+    return;
+  }
         await Api.delete(`/usuarios/${id}`)
 
        getUsers()
