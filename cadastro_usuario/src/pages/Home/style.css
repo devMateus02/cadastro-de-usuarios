@@ -110,3 +110,15 @@ form button{
    background-color: transparent;
    border: none;
 }
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
