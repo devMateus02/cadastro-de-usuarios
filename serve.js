@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config({ path: './.env' });
 const uri = process.env.MONGODB_URI;
-console.log("MongoDB URI:", uri);
+console.log("conectado ao MongoDB URI:", uri);
 const bodyParser = require('body-parser');
 const { MongoClient, ObjectId } = require('mongodb');
 
