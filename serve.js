@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config({ path: './.env' });
 const uri = process.env.MONGODB_URI;
-console.log("conectado ao MongoDB URI:", uri);
 const bodyParser = require('body-parser');
 const { MongoClient, ObjectId } = require('mongodb');
 
@@ -21,7 +20,7 @@ let db, usersCollection;
 async function start() {
   try {
     await client.connect();
-    db = client.db('users'); // substitua pelo nome real
+    db = client.db('users'); 
     usersCollection = db.collection('users');
     console.log('Conectado ao MongoDB');
     
